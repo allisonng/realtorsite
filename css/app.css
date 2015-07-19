@@ -1,0 +1,9 @@
+
+#slidy-container {
+	width: 100%;
+	overflow: hidden; /* this is required */
+}
+.top-bar-section ul li{
+	color: #FFFFFF;
+	padding: 10px;
+}
