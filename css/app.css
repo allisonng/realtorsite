@@ -3,7 +3,21 @@
 	width: 100%;
 	overflow: hidden; /* this is required */
 }
-.top-bar-section ul li{
+
+/* TO DO list: add support for older browsers (IE) */
+
+.top-bar {
+	background-color: 27735A;	
+}
+
+.top-bar .name {
 	color: #FFFFFF;
-	padding: 10px;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+.top-bar-section ul li{
+	background-color: transparent;
+	color: #FFFFFF;
+	margin: 10px;
 }
