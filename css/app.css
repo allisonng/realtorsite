@@ -1,9 +1,23 @@
+body,h1,h2,h3,h4,h5,h6{
+	font-family: 'Lora', serif;
+}
 
 #slidy-container {
 	width: 100%;
 	overflow: hidden; /* this is required */
 }
 
+#about-me{
+	background-color: #0C2553;
+	color: #ffffff;
+}
+#about-me h4{
+	color: #ffffff;
+}
+
+.third-col{
+	background-color: #375EA6;
+}
 /* TO DO list: add support for older browsers (IE) */
 
 .top-bar {
