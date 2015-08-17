@@ -1,10 +1,22 @@
 body,h1,h2,h3,h4,h5,h6{
-	font-family: 'Lora', serif;
+	font-family: 'Roboto', serif;
+}
+body{
+	font-size: 20px;
+}
+	font-weight: bold;
+h4 {
+	font-weight: 700;
 }
 
 #slidy-container {
 	width: 100%;
 	overflow: hidden; /* this is required */
+}
+
+.title-area .name{
+	font-style: italic;
+	font-weight: 400;
 }
 
 #about-me{
@@ -15,9 +27,20 @@ body,h1,h2,h3,h4,h5,h6{
 	color: #ffffff;
 }
 
-.third-col{
-	background-color: #375EA6;
+.orbit-container .orbit-slides-container > * {
+	background-color: #000000;
 }
+
+.orbit-width{
+	width: 100%;
+}
+
+.orbit-width li img{
+	/*width: 960px;*/
+	display: block;
+	margin: 0 auto;
+}
+
 /* TO DO list: add support for older browsers (IE) */
 
 .top-bar {
