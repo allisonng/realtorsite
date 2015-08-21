@@ -13,6 +13,10 @@ h4 {
 	width: 100%;
 	overflow: hidden; /* this is required */
 }
+.title-area{
+	padding: 0px;
+	margin: 0px;
+}
 
 .title-area .name{
 	font-style: italic;
@@ -23,6 +27,7 @@ h4 {
 	background-color: #0C2553;
 	color: #ffffff;
 }
+
 #about-me h4{
 	color: #ffffff;
 }
@@ -36,15 +41,20 @@ h4 {
 }
 
 .orbit-width li img{
-	/*width: 960px;*/
 	display: block;
 	margin: 0 auto;
+}
+
+.orbit-width img {
+	max-width: 1333px;
+	max-height: auto;
 }
 
 /* TO DO list: add support for older browsers (IE) */
 
 .top-bar {
 	background-color: 27735A;	
+	height: 4rem;
 }
 
 .top-bar .name {
@@ -53,6 +63,11 @@ h4 {
 	padding-left: 10px;
 	padding-top: 5px;
 }
+
+.top-bar-section ul{
+	margin-top: 10px;
+}
+	
 .top-bar-section ul li{
 	background-color: transparent;
 	color: #FFFFFF;
