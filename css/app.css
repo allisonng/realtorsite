@@ -23,12 +23,16 @@ h4 {
 	font-weight: 400;
 }
 
-#about-me{
+.about-me{
 	background-color: #0C2553;
 	color: #ffffff;
+	width: 100%;
+}
+.about-me #profile-pic{
+	margin-top: 10px;
 }
 
-#about-me h4{
+.about-me h4{
 	color: #ffffff;
 }
 
@@ -47,7 +51,7 @@ h4 {
 
 .orbit-width img {
 	max-width: 1333px;
-	max-height: auto;
+	max-height: 1080px;
 }
 
 /* TO DO list: add support for older browsers (IE) */
@@ -55,13 +59,13 @@ h4 {
 .top-bar {
 	background-color: 27735A;	
 	height: 4rem;
+	padding: 10px;
 }
 
 .top-bar .name {
 	color: #FFFFFF;
-	font-size: 18px;
-	padding-left: 10px;
-	padding-top: 5px;
+	font-size: 1.4rem;
+	margin: 5px 0px 0px 5px; 
 }
 
 .top-bar-section ul{
@@ -72,4 +76,5 @@ h4 {
 	background-color: transparent;
 	color: #FFFFFF;
 	margin: 10px;
+	font-size: 1.2rem;
 }
