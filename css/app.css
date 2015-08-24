@@ -24,7 +24,7 @@ h4 {
 }
 
 .about-me{
-	background-color: #0C2553;
+	background-color: #252959;
 	color: #ffffff;
 	width: 100%;
 }
@@ -33,6 +33,17 @@ h4 {
 }
 
 .about-me h4{
+	color: #ffffff;
+}
+
+.contact-me{
+	background-image: url(../img/monochome_bg_cropped.JPG);
+	color: #ffffff;
+}
+.contact-me h4{
+	color: #ffffff;
+}
+.contact-me form label{
 	color: #ffffff;
 }
 
@@ -57,14 +68,14 @@ h4 {
 /* TO DO list: add support for older browsers (IE) */
 
 .top-bar {
-	background-color: 27735A;	
+	background-color: #2B6480;	
 	height: 4rem;
 	padding: 10px;
 }
 
 .top-bar .name {
 	color: #FFFFFF;
-	font-size: 1.4rem;
+	font-size: 1.0rem;
 	margin: 5px 0px 0px 5px; 
 }
 
@@ -76,5 +87,5 @@ h4 {
 	background-color: transparent;
 	color: #FFFFFF;
 	margin: 10px;
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 }
