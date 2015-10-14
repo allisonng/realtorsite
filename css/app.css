@@ -9,6 +9,11 @@ h4 {
 	font-weight: 700;
 }
 
+/* override foundation.css */
+.row {
+	max-width: 60em;
+}
+
 #slidy-container {
 	width: 100%;
 	overflow: hidden; /* this is required */
@@ -16,8 +21,14 @@ h4 {
 
 /* TO DO list: add support for older browsers (IE) */
 
+.rounded-corners {
+	border-radius: 35px;
+	margin: 0px auto;
+}
+
 .top-bar {
-	background-color: #2B6480;	
+	/*background-color: #2B6480;*/	
+	background-color: #567067;	
 	height: 4rem;
 	padding: 10px;
 }
@@ -74,9 +85,10 @@ h4 {
 
 
 .about-me{
-	background-color: #252959;
+	background-color: #21445B;
 	color: #ffffff;
-	width: 100%;
+	max-width: 1300px;
+	/*width: 100%;*/
 }
 .about-me #profile-pic{
 	margin-top: 10px;
@@ -90,9 +102,15 @@ h4 {
 
 
 .contact-me{
-	background-image: url(../img/monochome_bg_cropped.JPG);
 	color: #ffffff;
+	background-image: url('../img/monochome_bg_cropped.JPG');
+	min-height: 500px;
+/*    background-attachment: fixed;*/
+    background-position: center top;
+    background-repeat: no-repeat;
+	background-size: cover;
 }
+
 .contact-me h4{
 	color: #ffffff;
 }
@@ -100,3 +118,6 @@ h4 {
 	color: #ffffff;
 }
 
+#footer{
+	height: 150px;
+}
