@@ -51,7 +51,6 @@ h4 {
 }
 
 
-
 .orbit-container .orbit-slides-container > * {
 	background-color: #000000;
 }
@@ -70,6 +69,18 @@ h4 {
 	max-height: 1080px;
 }
 
+
+
+.home-container img{
+	min-width: 100%;
+}
+
+.home-container .row{
+	max-width: 100%;
+}
+.overlay-container {
+	position: relative;
+}
 
 
 
