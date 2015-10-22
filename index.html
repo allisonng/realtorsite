@@ -10,24 +10,31 @@
 </head>
 <body>
 
-	<nav class="top-bar" data-topbar role="navigation" data-options="stick_on: large; dropdown_autoclose: false">
-		<div class="top-bar-wrapper">
-			<ul class="title-area">
-				<li class="name">Sean Patterson</li>
-				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-			</ul>
-			<!-- right nav section! -->
-			<section class="top-bar-section">
-				<ul class="right">
-					<li>Home</li>
-					<li>About Us</li>
-					<li>Listings</li>
-					<li>Search for Houses</li>
-					<li>Contact Me</li>
-				</ul>
-			</section>
+	<div class="fixed">
+		<div class="row">
+			<div class="large-12 columns">
+				<nav class="top-bar" data-topbar role="navigation">
+					<div class="top-bar-wrapper">
+						<ul class="title-area">
+							<li class="name">Sean Patterson</li>
+							<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+						</ul>
+						<!-- right nav section! -->
+						<section class="top-bar-section">
+							<ul class="right">
+								<li>Home</li>
+								<li>About Us</li>
+								<li>Listings</li>
+								<li>Search for Houses</li>
+								<li>Contact Me</li>
+							</ul>
+						</section>
+					</div>
+				</nav>
+				
+			</div>
 		</div>
-	</nav>
+	</div>
 
 	<div class="row fullWidth">
 		<div class="large-12 hide-for-small">
@@ -225,7 +232,8 @@
 				
 <!-- 	<script src="js/slidy.js"></script> -->	
 	<script src="js/vendor/jquery.js"></script>
-	<script src="js/foundation/foundation.js"></script>
+	<script src="js/foundation.min.css"></script>
+	<!-- <script src="js/foundation/foundation.js"></script> -->
 	<script src="js/foundation/foundation.orbit.js"></script>
 	<script>
 	$(document).foundation();
