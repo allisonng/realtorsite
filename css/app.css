@@ -1,8 +1,11 @@
+html {
+	font-size: 1em;
+}
 body,h1,h2,h3,h4,h5,h6{
 	font-family: 'Roboto', serif;
 }
 body{
-	font-size: 20px;
+	font-size: 16px;
 }
 	font-weight: bold;
 h4 {
@@ -110,9 +113,23 @@ h4 {
 
 .overlay-text-navigation {
 	color: #000000;
-	font-size: 1em;
-	margin: 2em 0 0 0;
+	font-size: 1rem;
 	float: right;
+	margin: 4rem 3rem 0rem 0rem;
+}
+
+.overlay-text-title {
+	color: #000;
+	font-size: 3rem;
+	float: left;
+	margin: 1rem 0rem 0rem 1rem;
+}
+
+.overlay-text-subtitle {
+	color: #000;
+	font-size: 1rem;
+	float: left;
+	margin: 1.2rem 0rem 0rem 1rem;
 }
 
 /*.overlay-container.page-width-row{
