@@ -38,9 +38,9 @@ h4 {
 	margin: 0px auto;
 }
 
-/* .sticky:not(.fixed) {
-	visibility: hidden;
-} */
+.sticky:not(.fixed) {
+	/*visibility: hidden;*/
+} 
 
 .top-bar {
 	/*background-color: #2B6480;*/	
@@ -112,24 +112,23 @@ h4 {
 }
 
 .overlay-text-navigation {
-	color: #000000;
+	color: #000;
 	font-size: 1rem;
 	float: right;
-	margin: 4rem 3rem 0rem 0rem;
+	margin: 5% 15% 0px 0px;
 }
 
 .overlay-text-title {
 	color: #000;
 	font-size: 3rem;
 	float: left;
-	margin: 1rem 0rem 0rem 1rem;
+	margin: 5% 0px 0px 15%;
 }
 
 .overlay-text-subtitle {
 	color: #000;
 	font-size: 1rem;
-	float: left;
-	margin: 1.2rem 0rem 0rem 1rem;
+	margin-left: 1rem;
 }
 
 /*.overlay-container.page-width-row{
