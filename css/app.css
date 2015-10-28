@@ -6,7 +6,7 @@ body,h1,h2,h3,h4,h5,h6{
 }
 body{
 	font-size: 16px;
-	background-color: #f3f6fa;
+	background-color: #DFEBF8;
 }
 	font-weight: bold;
 h4 {
@@ -18,7 +18,8 @@ h4 {
 
 /* override foundation.css */
 .row {
-	max-width: 60em;
+	max-width: 70em;
+	margin: 4em auto;
 }
 .full-width {
    width: 100%;
@@ -26,6 +27,10 @@ h4 {
    margin-right: auto;
    max-width: initial;
 }
+.no-margin {
+	margin: 0 0;
+}
+
 .background-full-width {
 	background-color: #567067;
 }
@@ -90,13 +95,18 @@ h4 {
 	max-width: 100%;
 }*/
 .overlay-container {
-	background-image: url('../img/burrardbridge_vanierpark.jpg');
-	background-image: url('../img/east_van_cross.jpg');
+	/*background-image: url('../img/burrardbridge_vanierpark.jpg');*/
+	background-image: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.1),
+			rgba(0, 0, 0, 0.1)
+		),
+		url('../img/east_van_cross.jpg');
 	background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 43em; /*120em is 1920px*/
+	min-height: 50rem; /*120em is 1920px*/
 }
 
 .overlay-text-navigation {
@@ -123,9 +133,10 @@ h4 {
 
 
 .about-me{
-	background-color: #21445B;
+	background-color: #1C3F65;
 	color: #ffffff;
 	max-width: 1300px;
+	padding: 1em 0em;
 	/*width: 100%;*/
 }
 .about-me #profile-pic{
@@ -141,12 +152,13 @@ h4 {
 
 .contact-me{
 	color: #ffffff;
-	background-image: url('../img/monochome_bg_cropped.JPG');
-	min-height: 500px;
+	min-height: 31.25rem;
+	/*background-image: url('../img/monochome_bg_cropped.JPG');
+	min-height: 500px;*/
 /*    background-attachment: fixed;*/
-    background-position: center top;
+    /*background-position: center top;
     background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
 }
 
 .contact-me h4{
