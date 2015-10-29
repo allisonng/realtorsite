@@ -2,7 +2,7 @@ html {
 	font-size: 1em;
 }
 body,h1,h2,h3,h4,h5,h6{
-	font-family: 'Roboto', serif;
+	font-family: 'Roboto', sans-serif;
 }
 body{
 	font-size: 16px;
@@ -132,27 +132,37 @@ h4 {
 
 
 
-.about-me{
+#about-us{
 	background-color: #1C3F65;
 	color: #ffffff;
 	max-width: 1300px;
 	padding: 1em 0em;
 	/*width: 100%;*/
 }
-.about-me #profile-pic{
-	margin-top: 10px;
-}
-
-.about-me h4{
+#about-us h2{
 	color: #ffffff;
 }
 
+#first-profile-pic {
+	float: left;
+	width: 80%;
+	height: 80%	
+}
+#second-profile-pic {
+	float: right;
+	width: 80%;
+	height: 80%
+}
+
+.img-circle {
+	border-radius: 50%;
+}
 
 
-
-.contact-me{
+#contact-us{
 	color: #ffffff;
 	min-height: 31.25rem;
+	padding: 1em 0em;
 	/*background-image: url('../img/monochome_bg_cropped.JPG');
 	min-height: 500px;*/
 /*    background-attachment: fixed;*/
@@ -161,10 +171,10 @@ h4 {
 	background-size: cover;*/
 }
 
-.contact-me h4{
+#contact-us h2{
 	color: #ffffff;
 }
-.contact-me form label{
+#contact-us form label{
 	color: #ffffff;
 }
 
