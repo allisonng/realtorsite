@@ -1,17 +1,16 @@
 html {
-	font-size: 1em;
-}
-body,h1,h2,h3,h4,h5,h6{
-	font-family: 'Roboto', sans-serif;
-}
-body{
 	font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
 	background-color: #DFEBF8;
 }
-	font-weight: bold;
-h4 {
-	font-weight: 700;
-}
+
 .side-nav li a:not(.button) {
 	color: #fff;
 }
@@ -31,8 +30,8 @@ h4 {
 	margin: 0 0;
 }
 
-.background-full-width {
-	background-color: #567067;
+.nav-wrapper {
+	background-color: #152D47;
 }
 
 #slidy-container {
@@ -49,25 +48,26 @@ h4 {
 
 .sticky:not(.fixed) {
 	visibility: hidden;
-} 
-
+}
 .top-bar {
-	/*background-color: #2B6480;*/	
-	background-color: inherit;	
+	/*background-color: #2B6480;*/
+	background-color: inherit;
 	height: 4rem;
 	padding: 10px;
+	max-width: 70em;
+	margin: 0 auto;
 }
 
 .top-bar .name {
 	color: #FFFFFF;
 	font-size: 1.0rem;
-	margin: 5px 0px 0px 5px; 
+	margin: 5px 0px 0px 5px;
 }
 
 .top-bar-section ul{
 	margin-top: 10px;
 }
-	
+
 .top-bar-section ul li{
 	background-color: transparent;
 	color: #FFFFFF;
@@ -96,7 +96,7 @@ h4 {
 }*/
 .overlay-container {
 	/*background-image: url('../img/burrardbridge_vanierpark.jpg');*/
-	background-image: 
+	background-image:
 		linear-gradient(
 			rgba(0, 0, 0, 0.1),
 			rgba(0, 0, 0, 0.1)
@@ -107,24 +107,27 @@ h4 {
     background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 50rem; /*120em is 1920px*/
+	color: #fff;
 }
 
 .overlay-text-navigation {
-	color: #000;
+	color: inherit;
 	font-size: 1rem;
 	float: right;
 	margin: 5% 15% 0px 0px;
 }
-
 .overlay-text-title {
-	color: #000;
-	font-size: 3rem;
 	float: left;
 	margin: 5% 0px 0px 15%;
 }
+.overlay-text-title {
+	color: inherit;
+	font-size: 3rem;
+	font-weight: 700;
+}
 
 .overlay-text-subtitle {
-	color: #000;
+	color: inherit;
 	font-size: 1rem;
 	margin-left: 1rem;
 }
@@ -146,7 +149,7 @@ h4 {
 #first-profile-pic {
 	float: left;
 	width: 80%;
-	height: 80%	
+	height: 80%
 }
 #second-profile-pic {
 	float: right;
@@ -159,7 +162,7 @@ h4 {
 }
 
 
-#contact-us{
+#contact-us {
 	color: #ffffff;
 	min-height: 31.25rem;
 	padding: 1em 0em;
@@ -171,13 +174,21 @@ h4 {
 	background-size: cover;*/
 }
 
-#contact-us h2{
+#contact-us h2 {
 	color: #ffffff;
 }
-#contact-us form label{
+#contact-us form label {
 	color: #ffffff;
 }
 
-#footer{
-	height: 150px;
+footer{
+	min-height: 3em;
+}
+footer ul{
+	list-style-type: none;
+	text-align: center;
+}
+footer li{
+	display: inline-block;
+	padding: 0.8em;
 }
