@@ -30,6 +30,10 @@ body{
 	margin: 0 0;
 }
 
+#navbar-wrapper {
+	background-color: #3F80BC;
+}
+
 .nav-wrapper {
 	background-color: #152D47;
 }
@@ -48,6 +52,7 @@ body{
 
 .sticky:not(.fixed) {
 	visibility: hidden;
+	background-color: #3F80BC;
 }
 .top-bar {
 	/*background-color: #2B6480;*/
@@ -88,8 +93,17 @@ body{
 
 
 
+#splash {
+	background: #3F80BC;
+	margin: 0px;
+}
 
-
+#intro-points {
+	background: linear-gradient(to bottom, #3F80BC, #DFEBF8);
+}
+#intro-points .row{
+	margin-top: 0px;
+}
 
 /*.home-container row{
 	max-width: 100%;
