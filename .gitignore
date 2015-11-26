@@ -1,4 +1,5 @@
 documents/*.*
-v3_mockups/*.*
+img/v3_mockups/*.*
 MyIcons/*.*
-*/**/*.psd
+*.psd
+*.zip

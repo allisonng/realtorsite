@@ -1,0 +1,208 @@
+html {
+	font-size: 16px;
+}
+
+h2, header {
+	text-align: center;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #DFEBF8;
+}
+
+.side-nav li a:not(.button) {
+	color: #fff;
+}
+
+/* override foundation.css */
+.row {
+	max-width: 70em;
+	margin: 4em auto;
+}
+.full-width {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+.no-margin {
+	margin: 0 0;
+}
+
+#navbar-wrapper {
+	background-color: #3F80BC;
+}
+
+.nav-wrapper {
+	background-color: #152D47;
+}
+
+#slidy-container {
+	width: 100%;
+	overflow: hidden; /* this is required */
+}
+
+/* TO DO list: add support for older browsers (IE) */
+
+.rounded-corners {
+	border-radius: 35px;
+	margin: 0px auto;
+}
+
+.sticky:not(.fixed) {
+	visibility: hidden;
+	background-color: #3F80BC;
+}
+.top-bar {
+	/*background-color: #2B6480;*/
+	background-color: inherit;
+	height: 4rem;
+	padding: 10px;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.top-bar .name {
+	color: #FFFFFF;
+	font-size: 1.0rem;
+	margin: 5px 0px 0px 5px;
+}
+
+.top-bar-section ul{
+	margin-top: 10px;
+}
+
+.top-bar-section ul li{
+	background-color: transparent;
+	color: #FFFFFF;
+	margin: 10px;
+	font-size: 0.9rem;
+}
+
+
+.title-area{ /* slogan part of nav bar */
+	padding: 0px;
+	margin: 0px;
+}
+
+.title-area .name{
+	font-style: italic;
+	font-weight: 400;
+}
+
+
+
+#splash {
+	background: #3F80BC;
+	margin: 0px;
+}
+
+#intro-points {
+	background: linear-gradient(to bottom, #3F80BC, #DFEBF8);
+}
+#intro-points .row{
+	margin-top: 0px;
+}
+
+/*.home-container row{
+	max-width: 100%;
+}*/
+.overlay-container {
+	/*background-image: url('../img/burrardbridge_vanierpark.jpg');*/
+	background-image:
+		linear-gradient(
+			rgba(0, 0, 0, 0.1),
+			rgba(0, 0, 0, 0.1)
+		),
+		url('../img/east_van_cross.jpg');
+	background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 50rem; /*120em is 1920px*/
+	color: #fff;
+}
+
+.overlay-text-navigation {
+	color: inherit;
+	font-size: 1rem;
+	float: right;
+	margin: 5% 15% 0px 0px;
+}
+.overlay-text-title {
+	float: left;
+	margin: 5% 0px 0px 15%;
+}
+.overlay-text-title {
+	color: inherit;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.overlay-text-subtitle {
+	color: inherit;
+	font-size: 1rem;
+	margin-left: 1rem;
+}
+
+
+
+
+#about-us{
+	background-color: #1C3F65;
+	color: #ffffff;
+	max-width: 1300px;
+	padding: 1em 0em;
+	/*width: 100%;*/
+}
+#about-us h2{
+	color: #ffffff;
+}
+
+#first-profile-pic {
+	float: left;
+	width: 80%;
+	height: 80%
+}
+#second-profile-pic {
+	float: right;
+	width: 80%;
+	height: 80%
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+
+#contact-us {
+	color: #ffffff;
+	min-height: 31.25rem;
+	padding: 1em 0em;
+	/*background-image: url('../img/monochome_bg_cropped.JPG');
+	min-height: 500px;*/
+/*    background-attachment: fixed;*/
+    /*background-position: center top;
+    background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+#contact-us h2 {
+	color: #ffffff;
+}
+#contact-us form label {
+	color: #ffffff;
+}
+
+footer{
+	min-height: 3em;
+}
+footer ul{
+	list-style-type: none;
+	text-align: center;
+}
+footer li{
+	display: inline-block;
+	padding: 0.8em;
+}
