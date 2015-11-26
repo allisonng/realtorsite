@@ -2,6 +2,7 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	background-color: #ffffff;
+	font-size: 16px;
 }
 
 .row {
@@ -9,7 +10,7 @@ body{
 }
 
 #test { 
-	    background-image: url('http://www.pets4homes.co.uk/images/articles/1111/large/feline-influenza-all-about-cat-flu-5239fffd61ddf.jpg');
+    background-image: url('http://www.pets4homes.co.uk/images/articles/1111/large/feline-influenza-all-about-cat-flu-5239fffd61ddf.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -46,6 +47,34 @@ body{
 #nav ul>li {
 	display: table-cell;
 	text-align: center;
+}
+#nav a {
+	color: #000;
+}
+#nav a:link {
+	text-decoration: none;
+}
+#nav a:visited {
+	text-decoration: none;
+}
+#nav a:hover, a:active {
+	border-bottom-style: solid;
+	border-width: 5px; 
+	border-color: #3F80BC;
+}
+	/*
+#nav a:active {
+	border-bottom-style: solid;
+	border-width: 8px; 
+	border-color: #3F80BC;
+}*/
+
+
+header {
+	text-align: center;
+}
+#main-menu {
+	margin: 3em 0px;
 }
 
 

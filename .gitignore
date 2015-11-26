@@ -1,5 +1,10 @@
 documents/*.*
 img/v3_mockups/*.*
+img/misc/*.*
+img/misc
+img/v3_mockups
 MyIcons/*.*
 *.psd
 *.zip
+scrap
+temp*
