@@ -19,7 +19,7 @@ body{
 	padding: 0em;
 }
 .rounded-corners {
-	border-radius: 2rem;
+	border-radius: 1.2rem;
 }
 .button {
 	background-color: #DFEBF8;
@@ -90,10 +90,14 @@ body{
 #main-menu * {
 	text-align: center;
 }
-#main-section {
+.main-section {
 	background-color: #78C2D2;
 	overflow: auto;
 	margin-top: 1em auto;
+}
+
+#about-us, #contact-us {
+	display: none;
 }
 
 footer {
