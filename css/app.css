@@ -96,7 +96,7 @@ h2 {
 #main-menu * {
 	text-align: center;
 }
-.main-section {
+.main-section .row{
 	background-color: #78C2D2;
 	overflow: auto;
 	margin-top: 1em auto;
