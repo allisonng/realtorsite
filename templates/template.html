@@ -15,28 +15,7 @@
 		</div>
 	</div>
 
-	
-
-	<div id="nav" class="row">
-			<ul>
-				<li><a href="index.html">Back to Main</a></li>
-				<li><a href="current_listings.html">Current Listings</a></li>
-				<li><a href="comingsoon.html">Sold Listings</a></li>
-				<li><a href="mls_search.html" id="active-page">House Search</a></li>
-			</ul>
-	</div>
-	
-	<div class="row spacing">
-		<div class="large-12 columns">
-			<style>#embeded iframe{ width: 100%; }</style>
-			<div id="embeded"></div>
-			<script src="http://seanpatterson.realtyninja.com/static/js/jquery.js"></script>
-			<script src="http://seanpatterson.realtyninja.com/static/js/easyXDM/easyXDM.min.js"></script>        
-			<script src="http://seanpatterson.realtyninja.com/static/js/embed_js.js" rel="responsive" url="east-vancouver-mls-search"></script>        
-		</div>
-	</div>
-	
-	
+	{% block content %}{% endblock content %}	
    
    <footer class="row">
       <div class="large-12 columns">
