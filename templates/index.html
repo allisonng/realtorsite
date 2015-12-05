@@ -1,12 +1,10 @@
 	{% extends "template.html" %}
 	{% block content %}
 	<div id="nav" class="row">
-			<ul>
-				<li><a href="index.html" id="active-page">Main</a></li>
-				<li><a href="current_listings.html">Current Listings</a></li>
-				<li><a href="sold_listings.html">Sold Listings</a></li>
-				<li><a href="mls_search.html">House Search</a></li>
-			</ul>
+		<ul>{% for key,value in fileDict.iteritems() %}
+				{% if value == self %}<li><a href="{{ value }}" id="active-page">{{ key }}</a></li>
+				{% else %}<li><a href="{{ value }}">{{ key }}</a></li>
+{% endif %}{% endfor %}     </ul>
 	</div>
 
 
