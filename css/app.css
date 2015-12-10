@@ -1,10 +1,23 @@
-
-body{
+body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #ffffff;
-	font-size: 16px;
 }
 
+@media only screen and (max-width: 40em) { /* small screens */ 
+	body {
+		font-size: 14px;
+	}	
+}
+
+@media only screen and (min-width: 64.063em) { /* medium screens */
+	body {
+		font-size: 14px;
+	}
+}
+
+	font-size: 16px;
+	
+	 
 h2 {
 	text-align: center;
 }
@@ -77,10 +90,17 @@ h2 {
 #nav a:link, a:visited {
 	text-decoration: none;
 }
+
 #nav a:hover, a:active, #active-page {
 	border-bottom-style: solid;
 	border-width: 5px;
-	border-color: #B1E5F0;
+}
+#nav a:hover {
+	border-color: #78C2D2;
+}
+
+#nav a:active, #active-page {
+	border-color: #B1E5F0;	
 }
 	/*
 #nav a:active {

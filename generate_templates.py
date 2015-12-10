@@ -5,7 +5,7 @@ import jinja2
 from collections import OrderedDict
 
 fileList = ["index.html", "current_listings.html", "sold_listings.html", "mls_search.html"]
-fileDict = OrderedDict([('index.html', 'Main'), ('current_listings.html', 'Current listings'), ('sold_listings.html', 'Sold Listings'), ('mls_search.html', 'House Search')])
+fileDict = OrderedDict([('index.html', 'Main'), ('current_listings.html', 'Current listings'), ('coming_soon.html', 'Sold Listings'), ('mls_search.html', 'House Search')])
 fileDictItems = fileDict.items()
 
 templateLoader = jinja2.FileSystemLoader(searchpath="./templates")
@@ -18,3 +18,5 @@ for key,value in fileDictItems:
     outputText = template.render(fileDict=fileDictItems, fileName=key)
     file.write(outputText.encode('ascii', 'ignore'))
     file.close()
+
+print '\nCompiling complete! :D'
