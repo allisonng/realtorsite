@@ -5,13 +5,16 @@ body {
 
 @media only screen and (max-width: 40em) { /* small screens */
 	body {
-		font-size: 12px;
+		font-size: 13px;
+	}
+	#about-us, #contact-us, #newsletter, #open-houses {
+		display: block;	/* so it dosen't initially show when page loads */
 	}
 }
 
 @media only screen and (min-width: 40.063em) { /* medium screens */
 	body {
-		font-size: 14px;
+		font-size: 15px;
 	}
 	#nav>* {
 		font-size: 1.7rem;
@@ -19,7 +22,9 @@ body {
 	h3 {
 		font-size: 1.5rem;
 	}
-
+	#about-us, #contact-us, #newsletter, #open-houses {
+		display: none;	/* so it dosen't initially show when page loads */
+	}
 }
 
 @media only screen and (min-width: 64.063em) { /* large screns */
@@ -39,11 +44,12 @@ h2 {
 	max-width: 70em;
 }
 .row .row {
-	margin: 0em;
+	margin: 0em auto 0em;
 }
+
 .spacing {
 	margin: 2em auto;
-	padding: 2em 0em;
+	padding: 2em 1em;
 }
 .no-side-padding {
 	padding: 0em;
@@ -52,6 +58,7 @@ h2 {
 	border-radius: 1.2rem;
 }
 .button {
+	margin-bottom: 0em;
 	background-color: #E9F3F5;
 	color: #000000;
 	border-radius: 5px;
@@ -124,25 +131,34 @@ h2 {
 #main-menu {
 	background-color: #B1E5F0;
 	overflow: auto;
+	padding: auto 1em;
 }
 #main-menu * {
 	text-align: center;
 }
+#main-menu .column, .columns {
+	padding-left: 0.39em;
+	padding-right: 0.39em;
+}
+
 .main-section .row{
 	background-color: #78C2D2;
 	overflow: auto;
-	margin-top: 1em auto;
+	margin-top: 1em auto 0em;
 }
 
-#about-us, #contact-us, #newsletter, #open-houses {
-	display: none;
-}
+/*#about-us, #contact-us, #newsletter, #open-houses {
+	display: none;	
+}*/
 
 .profile-pic {
 	width: 60%;
 	height: 60%
 }
 
+#about-us ul, ul>*{
+	font-size: inherit;
+}
 #contact-us {
 	text-align: center;
 }
