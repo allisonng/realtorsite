@@ -15,7 +15,7 @@
 		</div>
 	</div>
 
-    <div id="nav" class="row hide-for-small-only">
+    <div class="row hide-for-small-only nav">
         <ul>{% for key,value in fileDict %}
                 {% if key == fileName %}<li><a href="{{ key }}" id="active-page">{{ value }}</a></li>
                 {% elif key == 'index.html' %}<li><a href="{{ key }}">Back to Main</a></li>
@@ -23,10 +23,10 @@
         {% endif %}{% endfor %}</ul>
     </div>
 
-    <div class="row show-for-small-only">
+    <div class="row show-for-small-only nav">
         <ul class="stack button-group">{% for key,value in fileDict %}
-            {% if key == fileName %}<li><a href="{{ key }}" class="button">{{ value }}</a></li>
-            {% elif key == 'index.html' %}<li><a href="{{ key }}">Back to Main</a></li>
+            {% if key == fileName %}<li><a href="{{ key }}" class="button active-button">{{ value }}</a></li>
+            {% elif key == 'index.html' %}<li><a href="{{ key }}" class="button">Back to Main</a></li>
             {% else %}<li><a href="{{ key }}" class="button">{{ value }}</a></li>
         {% endif %}{% endfor %}</ul>
     </div>
@@ -34,9 +34,10 @@
 	{% block content %}{% endblock content %}
 
    <footer class="row">
-      <div class="large-12 columns show-for-small">
+      <div class="large-12 columns">
         <ul>
         	<li>&copy; Copyright Sean Patterson</li>
+        	<li>Site made by Allison Ng</li>
         	<li>Icons by <a href="http://www.flaticon.com">flaticon</a></li>
         </ul>
       </div>

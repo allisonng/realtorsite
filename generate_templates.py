@@ -14,7 +14,7 @@ for key,value in fileDictItems:
     print key
     template = templateEnv.get_template(key) #./templates should have same names 
     file = open(key, 'w') # w will erase existing files
-    outputText = template.render(fileDict=fileDictItems, fileName=key)
+    outputText = template.render(fileDict=fileDictItems, fileName=key, buttonScrollToTop='Scroll to Top')
     file.write(outputText.encode('ascii', 'ignore'))
     file.close()
 

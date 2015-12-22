@@ -17,6 +17,15 @@ $(document).ready(function() {
        			 scrollTop: $(this).offset().top
    			 }, 2000);
 		},
+		scrollToTop: function() {
+			$('html, body').animate({
+				scrollTop: $('#main-menu').offset().top
+			}, 1000);
+		}
+	});
+	
+	$('.button-scrollToTop').click(function() {
+		$(this).scrollToTop();
 	});
 
 	$('#button-aboutus').click(function(){

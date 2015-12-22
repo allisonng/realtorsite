@@ -8,7 +8,26 @@ body {
 		font-size: 13px;
 	}
 	#about-us, #contact-us, #newsletter, #open-houses {
-		display: block;	/* so it dosen't initially show when page loads */
+		display: block;
+	}
+	.nav ul {
+		margin-top: 1.5em;
+	}
+	#main-menu .column, #main-menu .columns {
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+
+	#main-header {
+		background-image: url('../img/banner_mobile.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 0;
+		padding-top: 60%; /* (img-height / img-width * container-width) */
+	}
+	footer li{
+		padding: 0em;
 	}
 }
 
@@ -16,25 +35,47 @@ body {
 	body {
 		font-size: 15px;
 	}
-	#nav>* {
+	.nav>* {
 		font-size: 1.7rem;
+	}
+	.nav ul {
+		margin: 0em;
 	}
 	h3 {
 		font-size: 1.5rem;
 	}
 	#about-us, #contact-us, #newsletter, #open-houses {
-		display: none;	/* so it dosen't initially show when page loads */
+	display: none;	
+	}
+	#main-menu .column, #main-menu .columns {
+		padding-left: 0.39em;
+		padding-right: 0.39em;
+	}
+
+	#main-header {
+		background-image: url('../img/banner.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 0;
+		padding-top: 35%; /* (img-height / img-width * container-width) */
+	}
+	footer li{
+		padding: 0.8em;
 	}
 }
+
 
 @media only screen and (min-width: 64.063em) { /* large screns */
 	body{
 		font-size: 16px;
 	}
-	#nav>* {
+	.nav>* {
 		font-size: 2rem;
 	}
 }
+
+
 
 h2 {
 	text-align: center;
@@ -64,34 +105,31 @@ h2 {
 	border-radius: 5px;
 	transition: background-color 300ms ease-out 0s
 }
-.button:hover, .button:focus {
+.button:hover, .button:focus, .active-button {
+	border-radius: 5px;
 	background-color: #B4CCD1;
 	color: #000000;
 	border-color: #78C2D2;
-	border-radius: 5px;
+
+}
+.button-scrollToTop {
+	width: 100%;
+	margin-top: 1em;
 }
 .img-circle {
 	border-radius: 50%;
 }
 
-#main-header {
-	background-image: url('../img/banner.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 0;
-	padding-top: 35%; /* (img-height / img-width * container-width) */
-
-
-	/*margin: 0px auto;*/
+.mls-spacing {
+	margin-top: 2em;
 }
 
-#nav>* {
+
+.nav>* {
 	font-family: 'Century Gothic', sans-serif;
 }
 
-#nav ul{
-	margin: 0;
+.nav ul{
 	padding: 0;
 	list-style-type: none;
 	display: table;
@@ -99,26 +137,26 @@ h2 {
 	width: 100%;
 }
 
-#nav ul>li {
+.nav ul>li {
 	display: table-cell;
 	text-align: center;
 }
-#nav a {
+.nav a {
 	color: #000;
 }
-#nav a:link, a:visited {
+.nav a:link, a:visited {
 	text-decoration: none;
 }
 
-#nav a:hover, a:active, #active-page {
+.nav a:hover, a:active, #active-page {
 	border-bottom-style: solid;
 	border-width: 5px;
 }
-#nav a:hover {
+.nav a:hover {
 	border-color: #78C2D2;
 }
 
-#nav a:active, #active-page {
+.nav a:active, #active-page {
 	border-color: #B1E5F0;
 }
 	/*
@@ -136,11 +174,11 @@ h2 {
 #main-menu * {
 	text-align: center;
 }
-#main-menu .column, .columns {
-	padding-left: 0.39em;
-	padding-right: 0.39em;
-}
 
+/*#main-menu .small {
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+}*/
 .main-section .row{
 	background-color: #78C2D2;
 	overflow: auto;
@@ -150,7 +188,6 @@ h2 {
 /*#about-us, #contact-us, #newsletter, #open-houses {
 	display: none;	
 }*/
-
 .profile-pic {
 	width: 60%;
 	height: 60%
@@ -172,5 +209,4 @@ footer ul {
 }
 footer li {
 	display: inline-block;
-	padding: 0.8em;
 }

@@ -15,7 +15,7 @@
 		</div>
 	</div>
 
-    <div id="nav" class="row hide-for-small-only">
+    <div class="row hide-for-small-only nav">
         <ul>
                 <li><a href="index.html" id="active-page">Main</a></li>
                 
@@ -27,9 +27,9 @@
         </ul>
     </div>
 
-    <div class="row show-for-small-only">
+    <div class="row show-for-small-only nav">
         <ul class="stack button-group">
-            <li><a href="index.html" class="button">Main</a></li>
+            <li><a href="index.html" class="button active-button">Main</a></li>
             
             <li><a href="current_listings.html" class="button">Current listings</a></li>
         
@@ -43,48 +43,73 @@
 	<div id="main-menu" class="row rounded-corners spacing">
 		<div class="large-12 columns no-side-padding">
 			<div class="row">
-				<div class="small-6 medium-3 columns no-side-padding">
+				<div class="small-6 medium-3 columns">
 					<header>
 						<img src="img/icons/icon_person.png">
 						<br><h3>About Us</h3>
 					</header>
 					Find out about the team, and what we will do for you!
 				</div>
-				<div class="small-6 medium-3 columns no-side-padding">
+				<div class="small-6 medium-3 columns">
 					<header>
 						<img src="img/icons/icon_coffeecup.png">
 						<br><h3>Contact Us</h3>
 					</header>
 					Contact us and tell us what you are looking for
 				</div>
-				<div class="small-6 medium-3 columns no-side-padding">
+                <div class="row show-for-small-only">
+                    <div class="large-12 columns">
+                        <ul class="button-group even-2">
+                            <li>
+                                <a href="#about-us" class="button small">Meet Us</a>
+                            </li>
+                            <li>
+                                <a href="#contact-us" class="button small">Let's Chat</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                
+		  		<div class="small-6 medium-3 columns">
 					<header>
 						<img src="img/icons/icon_newsletter.png">
 						<br><h3>Newsletter</h3>
 					</header>
 					Our monthly newsletter brings to you real time local sales records, statistics, and projected scope of the marketplace
-					<br> &nbsp;
+					<br>&nbsp;
 				</div>
-				<div class="small-6 medium-3 columns no-side-padding">
+				<div class="small-6 medium-3 columns">
 					<header>
 						<img src="img/icons/icon_search.png">
 						<br><h3>Open houses </h3>
 					</header>
 					Find open houses in East Vancouver this weekend! Updated every thursday. 
 				</div>
+                <div class="row show-for-small-only">
+                    <div class="large-12 columns">
+                        <ul class="button-group even-2">
+                            <li>
+                                <a href="#newsletter" class="button small">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="#open-houses" class="button small">Search Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
 			</div>
 			<div class="row hide-for-small">
 				<div class="medium-3 columns">
-					<a href="#" class="button" id="button-aboutus">Meet us</a>
+					<a href="#" class="button" id="button-aboutus">Meet Us</a>
 				</div>
 				<div class="medium-3 columns">
 					<a href="#" class="button" id="button-contactus">Let's Chat</a>
 				</div>
 				<div class="medium-3 columns">
-					<a href="#" class="button" id="button-newsletter">Sign up</a>
+					<a href="#" class="button" id="button-newsletter">Sign Up</a>
 				</div>
 				<div class="medium-3 columns">
-					<a href="#" class="button" id="button-openhouses">Search now</a>
+					<a href="#" class="button" id="button-openhouses">Search Now</a>
 				</div>
 			</div>
 		</div>
@@ -104,29 +129,24 @@
 					<li><b>Where do you start? </b> Its about considering the big picture while taking care of the small details. Thats why professional photography, measurements, staging, a lick of paint, and cleanup is included.</li>
 					<li><b>Right place, Right time </b> Follow a transparent, time tested marketing strategy.</li>
 					<li><b>Can you hear me? </b> We are all unique so we know its not only important to be listened to, but also understood.</li>
-					<li><b>What now -</b> When you hire professionals, trained in the art of negotiation you wont be left in the dark looking for answers; youll have them.</li></ul>
+					<li><b>What now -</b> When you hire professionals, trained in the art of negotiation you wont be left in the dark looking for answers; youll have them.</li>
+				</ul>
+                   
 				</p>
 			</div>
 			<div class="small-12 medium-4 large-4 columns">
 				<img class="img-circle profile-pic left" src="img/cropped_sean.png">
 				<img class="img-circle profile-pic right" src="img/cropped_laura.png">
 			</div>
+		    <div class="small-12 columns show-for-small-only">
+              <a href="#" class="button small button-scrollToTop">Scroll to Top</a>
+            </div>
 		</div>
 	</div>
 
 	<div id="contact-us" class="main-section">
 		<div class="row rounded-corners spacing">
-			<div class="small-12 medium-6 large-4 columns">
-				<iframe
-				width="360"
-				height="400"
-				frameborder="0"
-				style="border:0"
-				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKe3XrU6QYlav_8vS6Modd4nexlQ64AmY&q=1250+Commercial+Dr,+Vancouver,+BC+V5L"
-				allowfullscreen>
-				</iframe>
-			</div>
-			<div class="small-12 medium-6 large-4 columns">
+			<div class="small-12 medium-6 large-4 large-push-4 columns">
 				<h2>Contact Us</h2>
 				<br><b>Email</b>: info at seanpatterson.ca
 				<br><b>Address</b>: 1250 Commercial Drive
@@ -139,13 +159,34 @@
 				<br><b>Monday to Friday</b>: 9am to 5pm
 				<br><b>Saturday</b>: Open until noon
 				<br><b>Saturday</b>: closed
+				<br>&nbsp;
 			</div>
-			<!-- <div class="large-4 small-6 columns">
-				<img src="http://placehold.it/350x150">
-			</div> -->
-			<div class="small-12 medium-12 large-4 columns">
+            <div class="small-12 medium-6 large-4 large-pull-4 columns show-for-small-only">
+                <iframe
+                width="275"
+                height="375"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKe3XrU6QYlav_8vS6Modd4nexlQ64AmY&q=1250+Commercial+Dr,+Vancouver,+BC+V5L"
+                allowfullscreen>
+                </iframe>
+            </div>
+			<div class="small-12 medium-6 large-4 large-pull-4 columns hide-for-small-only">
+				<iframe
+				width="360"
+				height="400"
+				frameborder="0"
+				style="border:0"
+				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKe3XrU6QYlav_8vS6Modd4nexlQ64AmY&q=1250+Commercial+Dr,+Vancouver,+BC+V5L"
+				allowfullscreen>
+				</iframe>
+			</div>
+			<div class="small-12 medium-12 large-pull-4 columns">
 				<script type="text/javascript" src="https://form.jotform.com/jsform/53337802849261"></script>
 			</div>
+            <div class="small-12 columns show-for-small-only">
+              <a href="#" class="button small button-scrollToTop">Scroll to Top</a>
+            </div>
 		</div>
 	</div>
 
@@ -159,6 +200,9 @@
 			<div class="small-12 medium-6 large-6 columns">
 				<script type="text/javascript" src="https://form.jotform.com/jsform/53336299857269"></script>
 			</div>
+            <div class="small-12 columns show-for-small-only">
+              <a href="#" class="button small button-scrollToTop">Scroll to Top</a>
+            </div>
 		</div>
 	</div>
 
@@ -173,14 +217,18 @@
 					<script src="http://seanpatterson.realtyninja.com/static/js/embed_js.js" rel="responsive" url="open-houses"></script>
 				</p>
 			</div>
+	        <div class="small-12 columns show-for-small-only">
+              <a href="#" class="button small button-scrollToTop">Scroll to Top</a>
+            </div>
 		</div>
 	</div>
 	
 
    <footer class="row">
-      <div class="large-12 columns show-for-small">
+      <div class="large-12 columns">
         <ul>
         	<li>&copy; Copyright Sean Patterson</li>
+        	<li>Site made by Allison Ng</li>
         	<li>Icons by <a href="http://www.flaticon.com">flaticon</a></li>
         </ul>
       </div>
