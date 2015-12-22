@@ -189,8 +189,7 @@ h2 {
 	display: none;	
 }*/
 .profile-pic {
-	width: 60%;
-	height: 60%
+	max-width: 225px;
 }
 
 #about-us ul, ul>*{
