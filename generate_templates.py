@@ -4,7 +4,7 @@
 import jinja2
 from collections import OrderedDict
 
-fileDict = OrderedDict([('index.html', 'Main'), ('current_listings.html', 'Current listings'), ('sold_listings.html', 'Sold Listings'), ('mls_search.html', 'House Search')])
+fileDict = OrderedDict([('index.html', 'Main'), ('current_listings.html', 'Current Listings'), ('sold_listings.html', 'Sold Listings'), ('mls_search.html', 'House Search')])
 fileDictItems = fileDict.items()
 
 templateLoader = jinja2.FileSystemLoader(searchpath="./templates")

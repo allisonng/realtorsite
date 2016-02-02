@@ -21,11 +21,20 @@ $(document).ready(function() {
 			$('html, body').animate({
 				scrollTop: $('#main-menu').offset().top
 			}, 1000);
+		},
+		emailViaContactForm: function() {
+			$('html, body').animate({
+				scrollTop: $('#contactus-form').offset().top
+			}, 2000);
 		}
 	});
-	
+
 	$('.button-scrollToTop').click(function() {
 		$(this).scrollToTop();
+	});
+
+	$('#contactus-email').click(function() {
+		$(this).emailViaContactForm();
 	});
 
 	$('#button-aboutus').click(function(){
