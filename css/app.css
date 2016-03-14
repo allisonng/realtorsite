@@ -192,9 +192,14 @@ h2 {
 	max-width: 225px;
 }
 
+#mini-nav {
+	margin-top: 2em;
+}
+
 #about-us ul, ul>*{
 	font-size: inherit;
 }
+
 #contact-us {
 	text-align: center;
 }

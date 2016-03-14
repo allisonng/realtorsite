@@ -15,17 +15,17 @@ $(document).ready(function() {
 		scrollToBottom: function() {
 		    $('html, body').animate({
        			 scrollTop: $(this).offset().top
-   			 }, 2000);
+   			 }, 1500);
 		},
 		scrollToTop: function() {
 			$('html, body').animate({
 				scrollTop: $('#main-menu').offset().top
-			}, 1000);
+			}, 1500);
 		},
 		emailViaContactForm: function() {
 			$('html, body').animate({
 				scrollTop: $('#contactus-form').offset().top
-			}, 2000);
+			}, 1000);
 		}
 	});
 
