@@ -44,9 +44,16 @@ body {
 	h3 {
 		font-size: 1.5rem;
 	}
-	#about-us, #contact-us, #newsletter, #open-houses {
+	#about-us, 
+	#contact-us, 
+	#newsletter, 
+	#open-houses,
+	#mini-nav,
+	#about-us-info,
+	#about-us-testimonials {
 	display: none;	
 	}
+	
 	#about-us #mini-nav .columns:first-child {
 		margin-left: 20%;
 		

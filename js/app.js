@@ -39,7 +39,19 @@ $(document).ready(function() {
 
 	$('#button-aboutus').click(function(){
 		$('.main-section').hide();
-		$('#about-us').fadeIn('slow').scrollToBottom();
+		$('#about-us').show(function() {
+			$('#mini-nav').fadeIn('slow').scrollToBottom();
+		});
+	});
+
+	$('#button-aboutusinfo').click(function(){
+		$('#about-us-testimonials').hide();
+		$('#about-us-info').fadeIn('slow').scrollToBottom();
+	});
+	
+	$('#button-aboutustestimonials').click(function(){
+		$('#about-us-info').hide();
+		$('#about-us-testimonials').fadeIn('slow').scrollToBottom();
 	});
 
 	$('#button-contactus').click(function(){
