@@ -44,19 +44,19 @@ body {
 	h3 {
 		font-size: 1.5rem;
 	}
-	#about-us, 
-	#contact-us, 
-	#newsletter, 
+	#about-us,
+	#contact-us,
+	#newsletter,
 	#open-houses,
 	#mini-nav,
 	#about-us-info,
 	#about-us-testimonials {
-	display: none;	
+		display: none;
 	}
-	
+
 	#about-us #mini-nav .columns:first-child {
 		margin-left: 20%;
-		
+
 	}
 	#about-us #mini-nav .columns:last-child {
 		margin-right: 20%;
@@ -65,7 +65,9 @@ body {
 		padding-left: 0.39em;
 		padding-right: 0.39em;
 	}
-
+	#button-aboutusinfo {
+		width: 8em;
+	}
 	#main-header {
 		background-image: url('../img/banner.png');
 		background-size: contain;
@@ -201,10 +203,11 @@ h2 {
 }
 
 /*#about-us, #contact-us, #newsletter, #open-houses {
-	display: none;	
+	display: none;
 }*/
 .profile-pic {
 	max-width: 225px;
+	min-width: 150px;
 }
 
 #mini-nav {
