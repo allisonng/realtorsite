@@ -48,12 +48,49 @@ $(document).ready(function() {
 		$('#about-us-testimonials').hide();
 		$('#about-us-info').fadeIn('slow').scrollToBottom();
 	});
-	
+
+	// $('#button-aboutustestimonials').click(function(){
+		// $('#about-us-info').hide();
+		// $('#about-us-testimonials').fadeIn('slow').scrollToBottom();
+	// });
+
 	$('#button-aboutustestimonials').click(function(){
 		$('#about-us-info').hide();
-		$('#about-us-testimonials').fadeIn('slow').scrollToBottom();
+		$('#about-us-testimonials').toggle('slow', function() {
+			$('#about-us-testimonials').slick('setPosition');
+
+			// if(('#about-us-testimonials').is(':visible')){
+				// $('#about-us-testimonials').slick({
+						// dots: true,
+				      	// autoplay: false,
+				      	// arrows: true,
+				      	// pauseOnHover: true,
+				      	// pauseOnDotsHover: true
+				// });
+				// $("body").html("<p>Visible</p>");
+			// };
+			// else{
+				// $('#about-us-testimonials').slick('unslick');
+				// $("body").html("<p>Not Visible</p>");
+			// };
+		});
+
 	});
 
+
+	$('#about-us-testimonials').slick({
+			dots: true,
+	      	autoplay: false,
+	      	arrows: true,
+	      	pauseOnHover: true,
+	      	pauseOnDotsHover: true
+	});
+	// $('#about-us-testimonials:hidden').slick('unslick');
+	// $('#button-contact').click(function(){
+		// $('#contact-us').toggle('slow', function() {
+			// if($('#contact-us').is(':visible'))
+		// });
+	// });
 	$('#button-contactus').click(function(){
 		$('.main-section').hide();
 		$('#contact-us').fadeIn('slow').scrollToBottom();
@@ -68,5 +105,6 @@ $(document).ready(function() {
 		$('.main-section').hide();
 		$('#open-houses').fadeIn('slow').scrollToBottom();
 	});
+
 
 });

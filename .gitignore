@@ -6,5 +6,7 @@ img/v3_mockups
 MyIcons/*.*
 *.psd
 *.zip
+*.png
+*.gif
 scrap
-temp.html
+*.html
