@@ -8,7 +8,9 @@
 	<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
 	<meta http-equiv="EXPIRES" content="Mon, 01 Feb 2016 00:01:01 GMT">
 	<link rel="stylesheet" href="css/foundation.css" />
+
 	<link rel="stylesheet" href="css/app.css" />
+    {% block head_content %}{% endblock head_content %}
 </head>
 <body>
 
@@ -45,6 +47,7 @@
       </div>
     </footer>
 
+    {% block script_content %}{% endblock script_content %} 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/app.js"></script>
   </body>
