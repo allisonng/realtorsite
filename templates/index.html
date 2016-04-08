@@ -1,21 +1,21 @@
-	{% extends "template.html" %}
+{% extends "template.html" %}
 
-{% block head_content %}
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
-{% endblock head_content %}
+    {% block head_content %}
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+    {% endblock head_content %}
+
 	{% block script_content %}
-<script src="js/vendor/jquery.js"></script>
-<script src="js/foundation/foundation.js"></script>
-<script src="js/foundation/foundation.orbit.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-<script>
-    $(document).foundation();
-    $(document).ready(function(){
-      $('.text-slider').slick({
-      });
-    });
-</script>
-{% endblock script_content %}
+	
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    {% endblock script_content %}
 
 
 	
@@ -96,7 +96,6 @@
 	</div>
 
     {% include "about-us.html" %}
-
 
 	<div id="contact-us" class="main-section">
 		<div class="row rounded-corners spacing">

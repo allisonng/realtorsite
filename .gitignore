@@ -6,5 +6,9 @@ img/v3_mockups
 MyIcons/*.*
 *.psd
 *.zip
-scrap
-temp.html
+*.png
+*.gif
+*.html
+.project
+.pydevproject
+img/profilepic_*.jpg

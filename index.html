@@ -1,4 +1,4 @@
-	<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css' />
@@ -7,8 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
 	<meta http-equiv="EXPIRES" content="Mon, 01 Feb 2016 00:01:01 GMT">
+
 	<link rel="stylesheet" href="css/foundation.css" />
 	<link rel="stylesheet" href="css/app.css" />
+    
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+    
 </head>
 <body>
 
@@ -88,7 +93,7 @@
 					Find open houses in East Vancouver this weekend! Updated every Thursday at 5pm.
 				</div>
                 <div class="row show-for-small-only">
-                    <div class="large-12 columns">
+                    <div class="small-12 columns">
                         <ul class="button-group even-2">
                             <li>
                                 <a href="#newsletter" class="button small">Sign Up</a>
@@ -117,48 +122,111 @@
 		</div>
 	</div>
 
-	<div id="about-us" class="main-section">
-        <div id="mini-nav" class="row rounded-corners spacing show-for-small-only">
-           <div class="large-12 columns">
+    
+
+<div id="about-us" class="main-section">
+    <div id="mini-nav">
+       <div class="row rounded-corners spacing show-for-small-only">
+           <div class="small-12 columns">
                <ul class="button-group even-2">
-                   <li><button class="button" id="button-aboutusinfo">About Us</button></li>
-                   <li><button class="button" id="button-aboutustestimonials">Testimonitals</button></li>
+                   <li>
+                       <a href="#about-us-info" class="button">About Us</a>
+                   </li>
+                   <li>
+                       <a href="#about-us-testimonials" class="button">Testimonials</a>
+                   </li>
                </ul>
            </div>
+       </div>
+        <div class="row rounded-corners spacing hide-for-small-only">
+            <div class="medium-3 columns">
+                <a href="#" class="button large" id="button-aboutusinfo">About Us</a>
+            </div>
+            <div class="medium-3 columns">
+                <a href="#" class="button large" id="button-aboutustestimonials">Testimonials</a>
+            </div>
         </div>
-		<div class="row rounded-corners spacing">
+    </div>
+    <div id="about-us-info" class="row rounded-corners spacing">
 
-				<div class="small-12 medium-8 large-8 columns">
-					<p><h2>About Us</h2>
-					Our experience working and living in East Vancouver has allowed us to see a ton of homes, and as a result we know what buyers want and what sellers can command on the open market.
+        <div class="small-12 medium-8 large-8 no-side-padding columns">
+            <p><h2>About Us</h2>
+            Our experience working and living in East Vancouver has allowed us to see a ton of homes, and as a result we know what buyers want and what sellers can command on the open market.
 
-					<br><br>In order to provide our clientele with the best advice and service we asked ourselves the only question that mattered: If we were selling our houses, what would we want from our Real Estate agents?
+            <br><br>In order to provide our clientele with the best advice and service we asked ourselves the only question that mattered: If we were selling our houses, what would we want from our Real Estate agents?
 
-					<br><br>This is what they have come up with:
-					<br><br>
-					<ul>
-						<li><b>Day to day life is busy </b> From start to finish the process should be simple, and seamless.</li>
-						<li><b>Where do you start? </b> Its about considering the big picture while taking care of the small details. Thats why professional photography, measurements, staging, a lick of paint, and cleanup is included.</li>
-						<li><b>Right place, Right time </b> Follow a transparent, time tested marketing strategy.</li>
-						<li><b>Can you hear me? </b> We are all unique so we know its important to be listened to, we hear you!</li>
-						<li><b>What now -</b> When you hire professionals, trained in the art of negotiation you wont be left in the dark looking for answers; youll have them.</li>
-					</ul>
+            <br><br>This is what they have come up with:
+            <br><br>
+            <ul>
+                <li><b>Day to day life is busy:</b>&nbsp; From start to finish the process should be simple, and seamless.</li>
+                <li><b>Where do you start?</b>&nbsp; It's about considering the big picture while taking care of the small details. That's why professional photography, measurements, staging, a lick of paint, and cleanup is included.</li>
+                <li><b>Right place, Right time: </b>&nbsp; Follow a transparent, time tested marketing strategy.</li>
+                <li><b>Can you hear me?</b>&nbsp; We are all unique so we know its important to be listened to, we hear you!</li>
+                <li><b>What now</b>&nbsp; When you hire professionals, trained in the art of negotiation you won't be left in the dark looking for answers; you'll have them.</li>
+            </ul>
 
-					<br><br>Our goal is to give you the most professional Real Estate experience ensuring you get the best results while protecting and communicating with you the entire time.
+            <br><br>Our goal is to give you the most professional Real Estate experience ensuring you get the best results while protecting and communicating with you the entire time.
 
-					<br><br>Choose us for your next real estate transaction!
+            <br><br>Choose us for your next real estate transaction!
 
-					</p>
-				</div>
-				<div class="small-12 medium-4 large-4 columns">
-					<img class="img-circle profile-pic left" src="img/cropped_sean.png">
-					<img class="img-circle profile-pic right" src="img/cropped_laura.png">
-				</div>
-			    <div class="small-12 columns show-for-small-only">
-	              <a href="#" class="button small button-scrollToTop">Scroll to Top</a>
-	            </div>
-		</div>
-	</div>
+            </p>
+        </div>
+        <div class="small-12 medium-4 large-4 no-side-padding columns show-for-large-only">
+            <img class="img-circle profile-pic left" src="img/cropped_sean.png">
+            <img class="img-circle profile-pic right" src="img/cropped_laura.png">
+        </div>
+        <div class="small-12 medium-4 large-4 no-side-padding columns hide-for-large-only">
+            <img class="img-circle profile-pic" src="img/cropped_sean.png">
+            <img class="img-circle profile-pic" src="img/cropped_laura.png">
+        </div>
+        <div class="small-12 columns show-for-small-only">
+          <a href="#" class="button small button-scrollToTop">Scroll to Top</a>
+        </div>
+    </div>
+   <div id="about-us-testimonials" class="row rounded-corners spacing">
+    
+        <div>
+            <p class="testimonial-content">
+    "The search for my investment property began early 2015 when I was referred to Sean by a close friend
+    of mine in Vancouver. The initial stage of my research was especially challenging as I'm based offshore,
+    which made physical inspection challenging in a fast moving market. Sean was keen and quick to assist,
+    and he was very diligent in tailoring the search to my requirements. He provided timely and thorough
+    analysis on properties that I showed interest in, and I was especially impressed by his proactive attitude.
+    I felt Sean really tried to understand my needs, and offered his honest opinion on the suitability of the
+    property to me as the potential buyer. Sean was integral in helping me find my property, and continued
+    to be helpful during the entire purchasing process. I'm very happy with his services and professionalism,
+    and would not hesitate recommending him to anyone I know."
+            </p>
+            <p class="testimonial-person"><i>Peter Wong</i></p>
+            <p class="testimonial-location"><i>Tokyo, Japan</i></p>
+        </div>
+
+
+        <div>
+            <p class="testimonial-content">
+    "In 2015, I was working with my financial planner on purchasing a condo for my daughter. It
+    was suggested to me that their lending channel could help me accomplish this but when we got into
+    it, I found I wasn't getting the pertinent information that I needed and I had lost 2 weeks. A
+    friend suggested I contact Sean Patterson to look into things and right from the start I found
+    him to be honest, direct, and informative. He was able to answer all my questions and dealt with
+    my requests in a timely manner. He ended up getting me the mortgage financing I was looking
+    for and in a way that never left me asking what step was next. As we approached the completion
+    date, due to the time constraints I ended up having an unexpected delay on a funds transfer of
+    investments I had liquidated. I called Sean, first and the guy offered to lend me the $20,000.00 for a
+    few days so that I could complete on time. THIS BLEW ME AWAY! In the end, I didn't have to go
+    that route, and I was able to get my money just in time to close the deal. Working with Sean was a
+    pleasure, and Ilook forward to working with him again. I would highly recommend him to anybody I
+    know."
+            </p>
+            <p class="testimonial-person"><i>Robert Hamill</i></p>
+            <p class="testimonial-location"><i>Surrey, BC</i></p>
+        </div>
+    </div>
+</div>
+
+  
+
+    
 
 	<div id="contact-us" class="main-section">
 		<div class="row rounded-corners spacing">
@@ -250,7 +318,18 @@
       </div>
     </footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+	
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+     
+
 	<script src="js/app.js"></script>
   </body>
 </html>
