@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 	$('#button-aboutustestimonials').click(function(){
 		$('#about-us-info').hide();
-		$('#about-us-testimonials').toggle('slow', function() {
+		$('#about-us-testimonials').toggle('fast', function() {
 			$('#about-us-testimonials').slick('setPosition');
 
 			// if(('#about-us-testimonials').is(':visible')){
