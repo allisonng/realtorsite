@@ -57,7 +57,7 @@ $(document).ready(function() {
 	$('#button-aboutustestimonials').click(function(){
 		$('#about-us-info').hide();
 		$('#about-us-testimonials').toggle('fast', function() {
-			$('#about-us-testimonials').slick('setPosition');
+			$('#testimonials-slider').slick('setPosition');
 
 			// if(('#about-us-testimonials').is(':visible')){
 				// $('#about-us-testimonials').slick({
@@ -78,12 +78,14 @@ $(document).ready(function() {
 	});
 
 
-	$('#about-us-testimonials').slick({
-			dots: true,
+	$('#testimonials-slider').slick({
+			dots: false,	// caused weird scrollbar issue!!! >:c
 	      	autoplay: false,
-	      	arrows: true,
 	      	pauseOnHover: true,
-	      	pauseOnDotsHover: true
+	      	pauseOnDotsHover: true,
+	      	adaptiveHeight: true,
+	      	respondTo: 'min',
+	      	arrows: true	// causing width scrollbar issue
 	});
 	// $('#about-us-testimonials:hidden').slick('unslick');
 	// $('#button-contact').click(function(){
