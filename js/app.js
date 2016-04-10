@@ -79,7 +79,7 @@ $(document).ready(function() {
 
 
 	$('#testimonials-slider').slick({
-			dots: false,	// caused weird scrollbar issue!!! >:c
+			dots: true,	// caused weird scrollbar issue!!! >:c
 	      	autoplay: false,
 	      	pauseOnHover: true,
 	      	pauseOnDotsHover: true,

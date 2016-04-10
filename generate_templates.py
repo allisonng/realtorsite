@@ -4,8 +4,22 @@
 import jinja2
 from collections import OrderedDict
 
-fileDict = OrderedDict([('index.html', 'Main'), ('current_listings.html', 'Current Listings'), ('sold_listings.html', 'Sold Listings'), ('mls_search.html', 'House Search')])
+
+fileDict = OrderedDict([('index.html', 'Main'), ('current_listings.html', 'Current Listings'), 
+                        ('sold_listings.html', 'Sold Listings'), ('mls_search.html', 'House Search')])
 fileDictItems = fileDict.items()
+
+testimonials = open('testimonials.txt', 'r')
+testimonialsArray = []
+testimonial = []
+for line in testimonials:
+    if line not in ['\n', '\r\n']:  # condition checks for empty lines
+        # create [content, name, location, etc] testimonial item
+        testimonial.append(line.rstrip())   # rstrip to get rid of \n at end of lines
+    else:
+        testimonialsArray.append(testimonial)
+        testimonial = []
+
 
 templateLoader = jinja2.FileSystemLoader(searchpath="./templates")
 templateEnv = jinja2.Environment(loader=templateLoader)
@@ -14,8 +28,9 @@ for key,value in fileDictItems:
     print key
     template = templateEnv.get_template(key) #./templates should have same names 
     file = open(key, 'w') # w will erase existing files
-    outputText = template.render(fileDict=fileDictItems, fileName=key, buttonScrollToTop='Scroll to Top')
+    outputText = template.render(fileDict=fileDictItems, fileName=key, testimonials=testimonialsArray, buttonScrollToTop='Scroll to Top')
     file.write(outputText.encode('ascii', 'ignore'))
     file.close()
+
 
 print '\nCompiling complete! :D'

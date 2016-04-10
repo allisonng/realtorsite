@@ -61,41 +61,15 @@
     </div>
    <div id="about-us-testimonials" class="row rounded-corners spacing">
         <div id="testimonials-slider">
-            <div>
-                <p class="testimonial-content">
-        "The search for my investment property began early 2015 when I was referred to Sean by a close friend
-        of mine in Vancouver. The initial stage of my research was especially challenging as I'm based offshore,
-        which made physical inspection challenging in a fast moving market. Sean was keen and quick to assist,
-        and he was very diligent in tailoring the search to my requirements. He provided timely and thorough
-        analysis on properties that I showed interest in, and I was especially impressed by his proactive attitude.
-        I felt Sean really tried to understand my needs, and offered his honest opinion on the suitability of the
-        property to me as the potential buyer. Sean was integral in helping me find my property, and continued
-        to be helpful during the entire purchasing process. I'm very happy with his services and professionalism,
-        and would not hesitate recommending him to anyone I know."
-                </p>
-                <p class="testimonial-person"><i>Peter Wong</i></p>
-                <p class="testimonial-location"><i>Tokyo, Japan</i></p>
-            </div>
-    
-            <div>
-                <p class="testimonial-content">
-        "In 2015, I was working with my financial planner on purchasing a condo for my daughter. It
-        was suggested to me that their lending channel could help me accomplish this but when we got into
-        it, I found I wasn't getting the pertinent information that I needed and I had lost 2 weeks. A
-        friend suggested I contact Sean Patterson to look into things and right from the start I found
-        him to be honest, direct, and informative. He was able to answer all my questions and dealt with
-        my requests in a timely manner. He ended up getting me the mortgage financing I was looking
-        for and in a way that never left me asking what step was next. As we approached the completion
-        date, due to the time constraints I ended up having an unexpected delay on a funds transfer of
-        investments I had liquidated. I called Sean, first and the guy offered to lend me the $20,000.00 for a
-        few days so that I could complete on time. THIS BLEW ME AWAY! In the end, I didn't have to go
-        that route, and I was able to get my money just in time to close the deal. Working with Sean was a
-        pleasure, and Ilook forward to working with him again. I would highly recommend him to anybody I
-        know."
-                </p>
-                <p class="testimonial-person"><i>Robert Hamill</i></p>
-                <p class="testimonial-location"><i>Surrey, BC</i></p>
-            </div>
+                {% for testimonial in testimonials %}
+                    <div>  
+                    {% for line in testimonial %}
+                        {% if line|length < 50 %}<p class="testimonial-info">{{ line }} </p>
+                        {% else %}<p class="testimonial-content">{{ line }}</p>
+                        {% endif %}
+                    {% endfor %}
+                    </div>
+                {% endfor %}
         </div>
     </div>
 </div>

@@ -1,0 +1,15 @@
+This is a freelance project made for www.seanandlaura.ca, a real-estate informational website.
+
+Some of their requirements:
+- rounded borders (no sharp corners)
+- simple, minimal website
+
+Dependencies:
+- Foundation 5
+- Slick js carousel, 1.5.9 
+- jquery 1.11
+- jinja2 (for compiling)
+
+Instructions
+- `python generate_templates.py` will compile jinja2 templates under /templates into ./ (root)
+
