@@ -2,10 +2,21 @@ $(document).ready(function() {
 
 	jQuery.fn.extend({
 		scrollToBottom: function() {
+			console.log('meow', this);
+			var $that = $(this);
 		    $('html, body').animate({
-       			 // scrollTop: $(this).offset().top     // this goes from very top to 'this' element
-       			 scrollTop: $(window).scrollTop() + ($(this).offset().top - $(window).scrollTop())	// this should go from CURR part of page to 'this' element'
+       			 scrollTop: $that.offset().top     // this goes from very top to 'this' element
+		       // $(window).scrollTop() + 100px     // this goes from CURRENT vertical position in screen to 100px foward
+       			 // scrollTop: $(window).scrollTop() + ($that.offset().top - $(window).scrollTop())	// this should go from CURR part of page to 'this' element'
    			 }, 1500);
+		       console.log('thatoffset', $that.offset().top);
+		       console.log('thisoffset', $('html, body').offset().top);
+		       console.log('$(window).scrollTop()', $(window).scrollTop());
+		},
+		scroll: function() {
+			$('html, body').animate({
+				scrollTop: $('#mini-nav').offset().top
+			});
 		},
 		scrollToTop: function() {
 			$('html, body').animate({
@@ -27,16 +38,16 @@ $(document).ready(function() {
 		$(this).emailViaContactForm();
 	});
 
-	$('#button-aboutus').click(function(){
+	$('#button-aboutus').click(function(){	// button says "Meet Us!"
 		$('.main-section').hide();
-		$('#about-us #about-us-testimonials').hide();
-		$('#about-us #about-us-info').hide();
-		// $('#about-us #mini-nav').fadeIn('slow').scrollToBottom();
+		// $('#about-us').hide();
+		// $('#about-us #about-us-testimonials').hide();
+		// $('#about-us #about-us-info').hide();
+		// $('#about-us #mini-nav').show().scrollToBottom();
 		// $('#about-us').show().$('#mini-nav').fadeIn('slow').scrollToBottom();
-		$('#about-us').show(function() {
+		$('#about-us').toggle(function() {
 			$('#mini-nav').fadeIn('slow');
-			$('#mini-nav').scrollToBottom();
-		});
+		}).scrollToBottom();
 	});
 
 	$('#button-aboutusinfo').click(function(){
@@ -48,8 +59,7 @@ $(document).ready(function() {
 		$('#about-us-info').hide();
 		$('#about-us-testimonials').toggle('fast', function() {
 			$('#testimonials-slider').slick('setPosition');
-			$(this).scrollToBottom();
-		});
+		}).scrollToBottom();
 
 	});
 
@@ -66,17 +76,17 @@ $(document).ready(function() {
 
 	$('#button-contactus').click(function(){
 		$('.main-section').hide();
-		$('#contact-us').fadeIn('slow').scrollToBottom();
+		$('#contact-us').show('fast').scrollToBottom();
 	});
 
 	$('#button-newsletter').click(function(){
 		$('.main-section').hide();
-		$('#newsletter').fadeIn('slow').scrollToBottom();
+		$('#newsletter').show('fast').scrollToBottom();
 	});
 
 	$('#button-openhouses').click(function(){
 		$('.main-section').hide();
-		$('#open-houses').fadeIn('slow').scrollToBottom();
+		$('#open-houses').show('fast').scrollToBottom();
 	});
 
 
