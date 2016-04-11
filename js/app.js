@@ -1,20 +1,10 @@
 $(document).ready(function() {
-// jQuery.fn.extend({
-    // zigzag: function () {
-        // var text = $(this).text();
-        // var zigzagText = '';
-        // var toggle = true; //lower/uppper toggle
-			// $.each(text, function(i, nome) {
-				// zigzagText += (toggle) ? nome.toUpperCase() : nome.toLowerCase();
-				// toggle = (toggle) ? false : true;
-			// });
-	// return zigzagText;
-    // }
-// });
+
 	jQuery.fn.extend({
 		scrollToBottom: function() {
 		    $('html, body').animate({
-       			 scrollTop: $(this).offset().top
+       			 // scrollTop: $(this).offset().top     // this goes from very top to 'this' element
+       			 scrollTop: $(window).scrollTop() + ($(this).offset().top - $(window).scrollTop())	// this should go from CURR part of page to 'this' element'
    			 }, 1500);
 		},
 		scrollToTop: function() {
@@ -39,40 +29,26 @@ $(document).ready(function() {
 
 	$('#button-aboutus').click(function(){
 		$('.main-section').hide();
+		$('#about-us #about-us-testimonials').hide();
+		$('#about-us #about-us-info').hide();
+		// $('#about-us #mini-nav').fadeIn('slow').scrollToBottom();
+		// $('#about-us').show().$('#mini-nav').fadeIn('slow').scrollToBottom();
 		$('#about-us').show(function() {
-			$('#mini-nav').fadeIn('slow').scrollToBottom();
+			$('#mini-nav').fadeIn('slow');
+			$('#mini-nav').scrollToBottom();
 		});
 	});
 
 	$('#button-aboutusinfo').click(function(){
 		$('#about-us-testimonials').hide();
-		$('#about-us-info').fadeIn('slow').scrollToBottom();
+		$('#about-us-info').toggle('fast').scrollToBottom();
 	});
-
-	// $('#button-aboutustestimonials').click(function(){
-		// $('#about-us-info').hide();
-		// $('#about-us-testimonials').fadeIn('slow').scrollToBottom();
-	// });
 
 	$('#button-aboutustestimonials').click(function(){
 		$('#about-us-info').hide();
 		$('#about-us-testimonials').toggle('fast', function() {
 			$('#testimonials-slider').slick('setPosition');
-
-			// if(('#about-us-testimonials').is(':visible')){
-				// $('#about-us-testimonials').slick({
-						// dots: true,
-				      	// autoplay: false,
-				      	// arrows: true,
-				      	// pauseOnHover: true,
-				      	// pauseOnDotsHover: true
-				// });
-				// $("body").html("<p>Visible</p>");
-			// };
-			// else{
-				// $('#about-us-testimonials').slick('unslick');
-				// $("body").html("<p>Not Visible</p>");
-			// };
+			$(this).scrollToBottom();
 		});
 
 	});
@@ -87,12 +63,7 @@ $(document).ready(function() {
 	      	respondTo: 'min',
 	      	arrows: true	// causing width scrollbar issue
 	});
-	// $('#about-us-testimonials:hidden').slick('unslick');
-	// $('#button-contact').click(function(){
-		// $('#contact-us').toggle('slow', function() {
-			// if($('#contact-us').is(':visible'))
-		// });
-	// });
+
 	$('#button-contactus').click(function(){
 		$('.main-section').hide();
 		$('#contact-us').fadeIn('slow').scrollToBottom();
