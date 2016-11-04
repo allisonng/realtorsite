@@ -209,3 +209,7 @@ footer ul {
 footer li {
 	display: inline-block;
 }
+
+footer #macdonald {
+	text-align: center
+}
