@@ -29,6 +29,10 @@ body {
 	footer li{
 		padding: 0em;
 	}
+	footer #macdonald {
+		width: 75%;
+		height: 75%;
+	}
 }
 
 @media only screen and (min-width: 40.063em) { /* medium screens */
@@ -63,15 +67,23 @@ body {
 	footer li{
 		padding: 0.8em;
 	}
+	footer #macdonald {
+		width: 25%;
+		height: 25%;
+	}
 }
 
 
-@media only screen and (min-width: 64.063em) { /* large screns */
+@media only screen and (min-width: 64.063em) { /* large screens */
 	body{
 		font-size: 16px;
 	}
 	.nav>* {
 		font-size: 2rem;
+	}
+	footer #macdonald {
+		width: 25%;
+		height: 25%;
 	}
 }
 
@@ -211,5 +223,6 @@ footer li {
 }
 
 footer #macdonald {
-	text-align: center
+	text-align: center;
+	margin: 0 auto;
 }
